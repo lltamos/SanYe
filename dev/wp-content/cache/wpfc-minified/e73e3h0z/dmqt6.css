@@ -3000,8 +3000,9 @@ body.banner-disabled.scrolled-past-banner .site-main {
 
 .user-logos__logo img {
     width: auto;
-    max-height: 30px;
+   min-height: 45px;
 }
+
 
 @media (min-width: 880px) {
     .user-logos {
@@ -3009,7 +3010,7 @@ body.banner-disabled.scrolled-past-banner .site-main {
     }
 
     .user-logos__logo {
-        margin: 0 25px 50px;
+        margin: 0 25px 70px;
     }
 
     .user-logos__logo img {

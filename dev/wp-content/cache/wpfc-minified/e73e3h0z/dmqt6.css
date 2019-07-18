@@ -486,7 +486,7 @@ textarea {
 
 .donut-page-banner__content {
     margin: 30px 0 50px;
-    max-width: 550px;
+    max-width: 580px;
     color: #fff;
 }
 
@@ -2198,7 +2198,7 @@ body.banner-disabled.scrolled-past-banner .site-main {
 
 .pairing__title {
     margin: 90px auto 0;
-    max-width: 700px;
+    min-width: 700px;
 }
 
 .pairing-vid-modal {
@@ -2683,7 +2683,20 @@ body.banner-disabled.scrolled-past-banner .site-main {
 
 .testimonial-list__banner {
     width: 100%;
+    padding: 24px 0;
 }
+
+.testimonial-list__banner a:hover{
+    border: 10px rebeccapurple;
+    font-weight: bold;
+    color: darkred;
+
+}
+
+.a-touch-link-hover{
+    cursor: pointer;
+}
+
 
 @media (max-width: 879px) {
     .testimonial-list__banner--desktop {

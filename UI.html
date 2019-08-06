@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BotUI - Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
+    <style>
+        .botui-app-containe{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-color: rebeccapurple;
+            height: 500px;
+            width: 320px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="botui-app-container" id="hello-world">
+    <bot-ui class="botui-app-containe"></bot-ui>
+</div>
+<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+<script>
+    var botui = new BotUI('hello-world');
+
+    botui.message.add({
+        content: 'Hello World from bot!'
+    }).then(function () { // wait till previous message has been shown.
+
+        botui.message.add({
+            delay: 1000,
+            human: true,
+            content: 'Hello World from human!'
+        });
+
+    }).then(function () {
+        botui.action.button({
+            delay:2000,
+            action: [
+                { // show only one button
+                    text: 'One',
+                    value: 'one'
+                }
+            ]
+        }).then(function (res) { // will be called when a button is clicked.
+            console.log(res.value); // will print "one" from 'value'
+        });
+    });
+</script>
+</body>
+</html>

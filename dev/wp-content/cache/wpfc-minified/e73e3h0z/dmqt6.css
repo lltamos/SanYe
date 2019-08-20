@@ -804,6 +804,15 @@ body.banner-purple .site-logo path.letter {
     fill: #380089 !important;
 }
 
+.scrolled-past-banner .site-logo img.logos,
+.has-pink-banner .site-logo img.logos,
+body.blog .site-logo img.logos,
+body.archive .site-logo img.logos,
+body.search .site-logo img.logos,
+body.banner-purple .site-logo img.logos {
+    content: url("../../../../logo-black.svg")
+}
+
 .site-navigation {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2686,14 +2695,14 @@ body.banner-disabled.scrolled-past-banner .site-main {
     padding: 24px 0;
 }
 
-.testimonial-list__banner a:hover{
+.testimonial-list__banner a:hover {
     border: 10px rebeccapurple;
     font-weight: bold;
     color: darkred;
 
 }
 
-.a-touch-link-hover{
+.a-touch-link-hover {
     cursor: pointer;
 }
 
@@ -3000,7 +3009,7 @@ body.banner-disabled.scrolled-past-banner .site-main {
 
 .user-logos__logo img {
     width: auto;
-   min-height: 45px;
+    min-height: 45px;
 }
 
 

@@ -2465,7 +2465,7 @@ body.banner-disabled.scrolled-past-banner .site-main {
     display: block;
     margin: 20px 0;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 3.2rem;
     line-height: calc(96 / 80);
 }
 
@@ -2512,7 +2512,7 @@ body.banner-disabled.scrolled-past-banner .site-main {
     }
 
     .pricing-block__price {
-        min-height: 40px;
+        min-height: 32px;
     }
 
     .pricing-block:not(.pricing-block--recommended) .pricing-block__content {
